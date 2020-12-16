@@ -251,3 +251,313 @@ section {
 }
 
 /* ********* BANNER SECTION END ************ */
+
+/* ********* ABOUT SECTION START ************ */
+
+.about {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.about [class|="flower"] {
+  position: absolute;
+}
+
+.about .flower-1 {
+  left: 16%;
+  top: 0;
+  max-width: 160px;
+}
+
+.about .flower-2 {
+  right: 135px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  max-width: 88px;
+}
+
+.sec-heading {
+  margin-bottom: 70px;
+  position: relative;
+  text-align: center;
+}
+
+.sec-heading img {
+  max-width: 84px;
+  margin: 0 auto 40px;
+}
+
+.sec-heading .tagline {
+  color: #a9001f;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 0.8;
+  margin-bottom: 27px;
+}
+
+.sec-heading .sec-title {
+  color: #000;
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.sec-heading p {
+  color: #888;
+  margin-bottom: 1.7rem;
+}
+
+.btn-round {
+  background-color: #ec6069;
+  border-radius: 2px 15px 15px 15px;
+}
+
+@media screen and (max-width: 991px) {
+  .about .flower-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sec-heading .sec-title {
+    font-size: 33px;
+  }
+}
+/* ********* ABOUT SECTION END ************ */
+
+/* ********* SERVICE SECTION START ************ */
+
+.service .service-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.service .single-service {
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  position: relative;
+}
+
+.service .single-service .service-hover {
+  background-color: rgba(255, 129, 126, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  opacity: 0;
+  visibility: visible;
+  height: 100%;
+  width: 100%;
+}
+
+.service .single-service .service-hover img {
+  margin: 0 auto 20px;
+  width: 47px;
+}
+
+.service .single-service .service-hover span {
+  color: #fff;
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.service .single-service:hover .service-hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ********* SERVICE SECTION END ************ */
+
+/* ********* PROCEDURE SECTION START ************ */
+
+.procedures {
+  position: relative;
+}
+
+.post {
+  text-align: center;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.post img {
+  margin-bottom: 35px;
+}
+.post h4 {
+  margin-bottom: 22px;
+}
+
+.post h4,
+.post h4 a {
+  color: #263a41;
+  font-size: 22px;
+}
+
+.post p {
+  margin-bottom: 39px;
+}
+
+.post .btn {
+  background-color: #30383b;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+.post:hover {
+  box-shadow: none;
+  border: 1px solid #ececec;
+}
+
+/* ********* PROCEDURE SECTION END ************ */
+
+/* ********* TESTIMONIAL SECTION START ************ */
+
+.bg-lightred {
+  background-color: #fff4f6;
+}
+
+.testimonial .single-tst {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonial .single-tst img {
+  margin: 0 auto 45px;
+  width: 59px;
+}
+
+.testimonial .single-tst p {
+  color: #30383b;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 35px;
+  margin-bottom: 43px;
+}
+
+.testimonial .single-tst .client-info .thumb {
+  border-radius: 50%;
+  margin-bottom: 22px;
+  height: 76px;
+  width: 76px;
+}
+
+.testimonial .single-tst .client-info p {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.testimonial .single-tst .client-info p span {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* ********* TESTIMONIAL SECTION END ************ */
+
+/* ********* TEAM MEDIC SECTION START ************ */
+
+.team .single-memb {
+  position: relative;
+  width: 100%;
+}
+
+.team .single-memb .memb-details {
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 20px #f0f0f0;
+  box-shadow: 0 5px 20px #f0f0f0;
+  max-width: calc(100% - 60px);
+  margin: -50px auto 0;
+  padding: 30px;
+  position: relative;
+  text-align-last: center;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  z-index: 1;
+}
+
+.team .single-memb .memb-details h6 {
+  color: #263a41;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.team .single-memb .memb-details span {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.team .single-memb .memb-social {
+  margin-top: -30px;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.team .single-memb .memb-social a {
+  border: 1px solid #30383b;
+  border-radius: 50%;
+  color: #30383b;
+  display: inline-block;
+  font-size: 13px;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 5px;
+  height: 30px;
+  width: 30px;
+}
+
+.team .single-memb .memb-social a:hover {
+  background-color: #ff817e;
+  border-color: #ec6069;
+  color: #fff;
+}
+
+.team .single-memb:hover .memb-details {
+  margin-top: -84px;
+}
+
+.team .single-memb .memb-social {
+  margin-top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 1199px) {
+}
+
+/* ********* TEAM MEDIC SECTION END ************ */
