@@ -17,7 +17,7 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
     <!-- Boxicons CSS -->
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -137,9 +137,35 @@
                 <i class="bx bx-play-circle bx-burst"></i> Watch our story</a
               >
               <!-- =========== MOBILE BUTTON ============= -->
+              <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                      </button>
+                      <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <form class="form-inline d-sm-block d-md-none">
                 <a href="#appointment" class="btn btn-reserve my-2 my-sm-0">
-                  Make an Appointment
+                  <i class="bx bx-send"></i>
+                  <span>Make an Appointment</span>
                 </a>
               </form>
             </div>
@@ -183,34 +209,54 @@
 
     <!-- ====== SERVICE SECTION START ====== -->
 
-    <section class="service">
-      <div class="service-card owl-carousel">
-        <div class="single-service">
-          <img src="images/service/service1.jpg" alt="facility" />
+    <section
+      class="service carousel slide"
+      id="carouselExampleSlidesOnly"
+      data-bs-ride="carousel"
+    >
+      <div class="service-card carousel-inner">
+        <div class="single-service carousel-item active">
+          <img
+            src="images/service/service1.jpg"
+            alt="facility"
+            class="d-sm-block w-100"
+          />
           <div class="service-hover">
             <img src="images/about.png" alt="" />
-            <span>Our Facility</span>
+            <span>Our Facility, swipe ></span>
           </div>
         </div>
-        <div class="single-service">
-          <img src="images/service/service2.jpg" alt="facility" />
+        <div class="single-service carousel-item">
+          <img
+            src="images/service/service2.jpg"
+            alt="facility"
+            class="d-sm-block w-100"
+          />
           <div class="service-hover">
             <img src="images/about.png" alt="" />
-            <span>Our Facility</span>
+            <span>Our Facility, swipe ></span>
           </div>
         </div>
-        <div class="single-service">
-          <img src="images/service/service3.jpg" alt="facility" />
+        <div class="single-service carousel-item">
+          <img
+            src="images/service/service3.jpg"
+            alt="facility"
+            class="d-sm-block w-100"
+          />
           <div class="service-hover">
             <img src="images/about.png" alt="" />
-            <span>Our Facility</span>
+            <span>Our Facility, swipe ></span>
           </div>
         </div>
-        <div class="single-service">
-          <img src="images/service/service1.jpg" alt="facility" />
+        <div class="single-service carousel-item">
+          <img
+            src="images/service/service1.jpg"
+            alt="facility"
+            class="d-sm-block w-100"
+          />
           <div class="service-hover">
             <img src="images/about.png" alt="" />
-            <span>Our Facility</span>
+            <span>Our Facility, swipe ></span>
           </div>
         </div>
       </div>
@@ -275,11 +321,6 @@
                   Donec orci quis purus diam nullam. Nibh faucibus lectus diam
                   turpis molestie donec. Mattis eget amet, neque massa,
                   pharetra, laoreet sed. Quis sit aliquam ipsum pharetra ut
-                  consectetur volutpat tortor orci. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Donec orci quis purus diam
-                  nullam. Nibh faucibus lectus diam turpis molestie donec.
-                  Mattis eget amet, neque massa, pharetra, laoreet sed. Quis sit
-                  aliquam ipsum pharetra ut consectetur volutpat tortor orci.”
                 </p>
 
                 <div class="client-info">
@@ -440,7 +481,11 @@
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(window).load(function () {
+        $("#myModal").modal("show");
+      });
+    </script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/script.js"></script>
