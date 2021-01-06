@@ -4,10 +4,7 @@
     <!-- ====== META TAG FOR SEO ====== -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Selas Clinic Beuaty clinic in Jakarta, Aesthetic Clinic"
-    />
+
     <meta name="robots" content="index, follow" />
 
     <!-- ====== CSS / STYLING====== -->
@@ -30,6 +27,32 @@
 
     <title>Selas Clinic</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <!-- Primary Meta Tags -->
+    <title>selas clinic — Beauty clinic aesthetic in Jakarta</title>
+    <meta
+      name="title"
+      content="selas clinic — Beauty clinic aesthetic in Jakarta"
+    />
+    <meta
+      name="description"
+      content="Klinik Kecantikan terdepan dan terpercaya di Indonesia. Teknologi perawatan terkini. Didukung para Dokter profesional & Beauty Therapist berpengalaman."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://selasclinic.com/" />
+    <meta
+      property="og:title"
+      content="selas clinic — Beauty clinic aesthetic in Jakarta"
+    />
+    <meta
+      property="og:description"
+      content="Klinik Kecantikan terdepan dan terpercaya di Indonesia. Teknologi perawatan terkini. Didukung para Dokter profesional & Beauty Therapist berpengalaman."
+    />
+    <meta
+      property="og:image"
+      content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+    />
   </head>
   <body class="home-two">
     <!-- ====== HEADER START ====== -->
@@ -55,63 +78,36 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="#"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Service
+                Services
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#service">Treatment</a>
+                </li>
+                <li><a class="dropdown-item" href="#team">Our Team</a></li>
 
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Body</a>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1">Contact Us</a>
+              <a class="nav-link" href="#contact" tabindex="-1">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <!-- ============================================================= -->
-    <!-- <header class="header abs-header fixed-top">
-      <div class="container">
-        <div class="row align-items-end mt-2">
-          <div class="col-md-3">
-            <a href="home.html" class="logo">
-              <img src="images/logoselas.png" alt="logo selas clinic" />
-            </a>
-          </div>
-          <div class="col-md-9">
-            <nav class="primary-menu navbar navbar-expand-lg">
-              <a href="javascript:void(0);" class="mobile-menu"
-                ><i class="bx bx-menu-alt-right"></i>
-              </a>
-              <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="home.html">About</a></li>
-                <li><a href="home.html">Feature</a></li>
-                <li><a href="home.html">Service</a></li>
-                <li><a href="home.html">Contact Us</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header> -->
-    <!-- ====== HEADER END ====== -->
 
     <!-- ====== BANNER SECTION START ====== -->
 
@@ -128,12 +124,11 @@
                 With Our Best Service
               </h2>
               <p>We are experienced in making you More Beautiful</p>
-              <a href="#" class="btn btn-reserve-now">RESERVE NOW</a>
-              <a
-                href="https://www.youtube.com/watch?v=9V0DPqDhBFs"
-                class="video-btn"
-                data-fancybox
+              <a href="https://wa.link/s24uyr" class="btn btn-reserve-now"
+                >RESERVE NOW</a
               >
+
+              <a href="#" class="video-btn" data-fancybox>
                 <i class="bx bx-play-circle bx-burst"></i> Watch our story</a
               >
               <!-- =========== MOBILE BUTTON ============= -->
@@ -163,7 +158,10 @@
                 </div>
               </div>
               <form class="form-inline d-sm-block d-md-none">
-                <a href="#appointment" class="btn btn-reserve my-2 my-sm-0">
+                <a
+                  href="https://wa.link/s24uyr"
+                  class="btn btn-reserve my-2 my-sm-0"
+                >
                   <i class="bx bx-send"></i>
                   <span>Make an Appointment</span>
                 </a>
@@ -178,7 +176,7 @@
 
     <!-- ====== ABOUT SECTION START ====== -->
 
-    <section class="about">
+    <section class="about" id="about">
       <img src="images/flower2.png" alt="flower background" class="flower-1" />
       <img src="images/flower3.png" alt="flower background2" class="flower-2" />
 
@@ -266,7 +264,7 @@
 
     <!-- ====== PROCEDURE SECTION START ====== -->
 
-    <section class="procedures">
+    <section class="procedures" id="service">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 m-auto">
@@ -342,7 +340,7 @@
 
     <!-- ====== TEAM SECTION START ====== -->
 
-    <section class="team">
+    <section class="team" id="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 m-auto">
@@ -405,7 +403,7 @@
     <!-- ====== TEAM SECTION END ====== -->
 
     <!-- ====== APPOINTMENT SECTION START ====== -->
-    <section class="appointment v2" id="appointment">
+    <section class="appointment v2" id="contact">
       <div class="appointment-wrap">
         <div class="appointment-form">
           <form action="#">
@@ -431,7 +429,9 @@
             <div class="form-field">
               <textarea name="notes" placeholder="Your notes"></textarea>
             </div>
-            <button class="btn btn-round">Make an Appointment</button>
+            <button href="https://wa.link/s24uyr" class="btn btn-round">
+              Make an Appointment
+            </button>
           </form>
         </div>
       </div>
