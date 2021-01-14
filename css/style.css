@@ -850,3 +850,14 @@ section {
 }
 
 /* ********* FOOTER SECTION END ************ */
+
+/* ========== modal button ======== */
+
+.btn-modal-close {
+  background-color: white;
+  border: 1px solid #999;
+  color: #999;
+}
+
+.modal-footer {
+}
