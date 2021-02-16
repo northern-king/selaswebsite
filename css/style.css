@@ -866,3 +866,7 @@ h1.heading {
     font-weight: 600;
     text-transform: uppercase;
 }
+
+.card-service-treatment {
+    margin-top: 100px;
+}
