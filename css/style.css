@@ -519,7 +519,7 @@ section {
     display: flex;
     justify-content: left;
     margin: 15px 10px;
-    text-align: center;
+    text-align: left;
 }
 .bx {
     font-size: 25px;
