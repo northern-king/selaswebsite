@@ -518,7 +518,8 @@ section {
 .modal-dialog .modal-content .modal-body li {
     display: flex;
     justify-content: left;
-    margin: 10px 30px;
+    margin: 15px 10px;
+    text-align: center;
 }
 .bx {
     font-size: 25px;
